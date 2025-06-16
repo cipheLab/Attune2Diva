@@ -1,22 +1,30 @@
 # Attune2Diva
 
-Attune2Diva is a specialized tool crafted to streamline the conversion of FCS files from the **ThermoFisher Attune NxT format** to a format that is compatible with **BD FACSDiva software**.
+**Attune2Diva** is a specialized tool designed to streamline the conversion of FCS files from the **ThermoFisher Attune NxT format** into a format compatible with **BD FACSDiva software**.
 
-## Features :sparkles:
+## ✨ Features
 
 - **File Upload**: Easily upload FCS files from your local machine.
-- **Automated Conversion**: Once uploaded, the tool efficiently processes and converts the files.
-- **Download Converted Files**: After conversion, download the files directly to your machine.
-- **Activity Log**: Review a detailed log of actions taken during your session.
+- **Automated Conversion**: Files are automatically processed and converted upon upload.
+- **Download Converted Files**: Download the converted files directly.
+- **Activity Log**: View a detailed log of all steps performed during the session.
 
-## Getting Started :rocket:
+## 🚀 Getting Started
 
-### Using Docker
+### 1. Install R
 
-To quickly set up and run Attune2Diva, you can use our Docker container:
+Download and install R from:  
+👉 https://cran.r-project.org/
 
-```bash
-docker pull georgealehandro/attune2diva:latest
-docker run -p 8080:8080 georgealehandro/attune2diva:latest
+### 2. Install Required R Packages
+
+Open R or RStudio and run the following commands to install required packages:
+
+```r
+install.packages(c("shiny", "shinydashboard", "shinyjs", "shinybusy"))
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("flowCore")
 ```
-This will pull the latest version of Attune2Diva and run it on port 8080. Navigate to http://localhost:8080 in your browser to start using the tool.
