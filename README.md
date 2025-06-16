@@ -18,7 +18,7 @@ Download and install R from:
 
 ### 2. Install Required R Packages
 
-Open R or RStudio and run the following commands to install required packages:
+Open R or RStudio and run the following commands:
 
 ```r
 install.packages(c("shiny", "shinydashboard", "shinyjs", "shinybusy"))
@@ -28,3 +28,5 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 BiocManager::install("flowCore")
 ```
+
+### 3. Launch app in R 
