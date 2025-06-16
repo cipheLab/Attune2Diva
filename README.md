@@ -29,4 +29,4 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("flowCore")
 ```
 
-### 3. Launch app in R 
+### 3. Launch app in R studio
