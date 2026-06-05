@@ -32,9 +32,9 @@ BiocManager::install("flowCore")
 ### 3. Launch app in R studio
 - Open RStudio.
   
--Go to File → Open File and open either the ui.R or server.R file.
+- Go to File → Open File and open either the ui.R or server.R file.
 
--Click Run App in the top-right corner of the screen to launch the application
+- Click Run App in the top-right corner of the screen to launch the application
 
 
 
