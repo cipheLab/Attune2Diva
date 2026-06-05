@@ -55,7 +55,16 @@ convert_to_BD_FacsDiva <- function(inputFile, outputFile) {
   # Write the result to a new FCS file
   print("done in function")
 
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   write.FCS(fcs_data, outputFile)
   
