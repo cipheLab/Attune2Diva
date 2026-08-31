@@ -57,7 +57,14 @@ convert_to_BD_FacsDiva <- function(inputFile, outputFile) {
 
   
   
-  
+  if ("$SPILLOVER" %in% names(fcs_data@description)) {
+
+  fcs_data@description[["$SPILL"]] <-
+    fcs_data@description[["$SPILLOVER"]]
+
+  fcs_data@description[["$SPILLOVER"]] <- NULL
+
+}
   
   
   
